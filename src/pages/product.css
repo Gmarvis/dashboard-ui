@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Poppins:wght@200;300;400;500;600&display=swap");
+
+.products {
+  width: 80vw;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.products h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cardsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 5%;
+  overflow: hidden;
+
+  margin: 0 auto;
+}
+
+.productCard {
+  margin: 5px auto;
+  width: 20%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.productCard img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.productCard p {
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.text h3 {
+  color: #7a0619;
+}
