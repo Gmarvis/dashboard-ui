@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+}
+.Sidebar {
+  height: 100%;
+  position: fixed;
+  width: 20vw;
+  background-color: #7a0619;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebarList {
+  height: auto;
+  width: 100%;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebarList .row {
+  /* width: 100%; */
+  height: 60px;
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  color: #fff;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* transition: 0.3s ease-in; */
 }
 
-.App-link {
-  color: #61dafb;
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebarList .row:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #2f4050;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
 }
